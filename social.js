@@ -13,10 +13,13 @@ function getAllSocial(data, bioguide) {
   const facebook = result[0].social.facebook
   const youtube = result[0].social.youtube_id
 
-  const rootTwitter = document.getElementById("twitter-span")
-  const rootFacebook = document.getElementById("facebook-span")
-  const rootYoutube = document.getElementById("youtube-span")
-
-
+  // const rootTwitter = document.getElementById("twitter-span")
+  // const rootFacebook = document.getElementById("facebook-span")
+  // const rootYoutube = document.getElementById("youtube-span")
+  //
+  // rootTwitter.innerHtml = "Hello"
+  document.getElementById("twitter-span").innerHTML = `${twitter}`
+  document.getElementById("facebook-span").innerHTML = `${facebook}`
+  document.getElementById("youtube-span").innerHTML = `${youtube}`
 
 }
